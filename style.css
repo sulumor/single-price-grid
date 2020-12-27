@@ -1,0 +1,119 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    letter-spacing: 2px;
+}
+.container-grille{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(2, 50%) ;
+}
+
+/* -----------COMMUNITY------------ */
+.community{
+    grid-area: 1 / 1 / 2 / -1;
+    background: #fff;
+    padding: 4vw;
+}
+.community h1{
+    color:  hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 40px;
+}
+.community h2{
+    color: hsl(71, 73%, 54%);
+    margin: 25px 0;
+    font-size: 35px;
+}
+.community p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.7;
+    font-size: 30px;
+}
+
+/* --------SUBSCRIPTION------------ */
+.subscription{
+    grid-area: 2 / 1 / -1 / 2;
+    background: hsl(179, 62%, 43%);
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.subscription span{
+    color: hsl(204, 43%, 93%);
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.subscription span::after{
+    content: 'per month';
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: -140px;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+}
+.subscription p{
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.subscription button{
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    background: hsl(71, 73%, 54%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+/* --------WHY US------------ */
+
+.whyUs{
+    grid-area : 2 / 2 / -1 / -1;
+    background: hsl(218, 22%, 67%);
+    color: #fff;
+    display: flex;
+    padding: 4vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: flex-start;
+}
+.whyUs li{
+    list-style: none;
+    line-height: 1.3;    
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
